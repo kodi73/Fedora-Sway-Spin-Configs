@@ -1,3 +1,3 @@
-# Configuration Directory Overview
+# Fedora + Sway Configuration 
 
 This repository contains user-specific configuration files for various applications and system utilities on a Linux (Fedora + Sway) environment.
