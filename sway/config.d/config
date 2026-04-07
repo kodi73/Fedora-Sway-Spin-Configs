@@ -25,7 +25,7 @@ set $rofi_cmd rofi \
 # Shows a combined list of the applications with desktop files and
 # executables from PATH.
 # TODO: add window with the next release of rofi-wayland
-set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
+set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi -theme Monokai
 
 ### Output configuration
 #
@@ -90,20 +90,7 @@ output * bg /usr/share/backgrounds/default.jxl fill
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    #bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-    # Power controls with confirmation
-set $mode_system (l)ogout | (s)uspend | (r)eboot | (p)oweroff
-mode "$mode_system" {
-    bindsym l exec swaymsg exit,        mode "default"
-    bindsym s exec systemctl suspend,   mode "default"
-    bindsym r exec systemctl reboot,    mode "default"
-    bindsym p exec systemctl poweroff,  mode "default"
-
-    # back to default mode
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
-bindsym $mod+Shift+e mode "$mode_system"
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
