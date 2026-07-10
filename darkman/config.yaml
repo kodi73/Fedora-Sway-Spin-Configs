@@ -1,0 +1,3 @@
+lat: 30.9  # your latitude (Ludhiana example)
+lng: 75.8  # your longitude
+dbusserver: true

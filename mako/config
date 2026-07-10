@@ -1,0 +1,47 @@
+# ~/.config/mako/config
+
+# Appearance
+background-color=#2d2d2d
+text-color=#ffffff
+border-color=#535353
+border-radius=8
+border-size=2
+width=350
+height=150
+padding=10
+margin=10
+
+# Font
+font=JetBrains Mono 11
+
+# Position
+anchor=top-right
+
+# Timing
+default-timeout=5000
+ignore-timeout=0
+
+# Icons
+icon-path=/usr/share/icons/Papirus-Dark
+max-icon-size=48
+
+# Styling
+layer=overlay
+
+
+# Normal notifications
+[urgency=normal]
+background-color=#2d2d2d
+border-color=#535353
+
+# Low priority
+[urgency=low]
+background-color=#1e1e2e
+border-color=#313244
+
+# Critical/urgent
+[urgency=critical]
+background-color=#8b0000
+border-color=#ff0000
+text-color=#ffffff
+default-timeout=0

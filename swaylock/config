@@ -3,5 +3,6 @@
 #
 # Image path supports environment variables and shell expansions,
 # e.g. image=$HOME/Pictures/default.png
-image=/usr/share/backgrounds/default.jxl
-scaling=fill
+
+#image=/usr/share/backgrounds/Blur_5.png
+#scaling=fill

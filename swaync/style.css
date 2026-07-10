@@ -1,0 +1,221 @@
+/* Monokai Pro color palette */
+/* bg: #2d2a2e, surface: #403e41, yellow: #ffd866, orange: #fc9867 */
+/* pink: #ff6188, green: #a9dc76, blue: #78dce8, purple: #ab9df2 */
+/* fg: #fcfcfa, comment: #727072 */
+
+* {
+  all: unset;
+  font-size: 14px;
+  font-family: "JetBrains Mono", "Noto Sans", monospace;
+  transition: all .2s ease;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.notification-row {
+  outline: none;
+  margin: 4px 0;
+}
+
+.notification-row:focus,
+.notification-row:hover {
+  opacity: 1;
+}
+
+.notification {
+  border-radius: 10px;
+  margin: 6px 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  padding: 0;
+}
+
+.notification-background {
+  background: #2d2a2e;
+  border: 1px solid #403e41;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.notification-background:hover {
+  background: #3a3740;
+}
+
+.notification-action {
+  background: #403e41;
+  border: none;
+  border-radius: 6px;
+  color: #fcfcfa;
+  padding: 6px 14px;
+  margin: 4px 4px 0 0;
+}
+
+.notification-action:hover {
+  background: #78dce8;
+  color: #2d2a2e;
+}
+
+.notification-action:last-child {
+  margin-right: 0;
+}
+
+.urgency-low {
+  border-left: 3px solid #a9dc76;
+}
+
+.urgency-normal {
+  border-left: 3px solid #78dce8;
+}
+
+.urgency-critical {
+  border-left: 3px solid #ff6188;
+  animation: shake 0.4s ease;
+}
+
+.notification-content {
+  background: transparent;
+  padding: 4px 0;
+  border-radius: 8px;
+}
+
+.notification-default-action {
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.notification-default-action:hover {
+  background: rgba(120, 220, 232, 0.08);
+}
+
+.summary {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffd866;
+}
+
+.body {
+  font-size: 13px;
+  color: #fcfcfa;
+  margin-top: 4px;
+}
+
+.app-name {
+  font-size: 12px;
+  color: #727072;
+  margin-bottom: 4px;
+}
+
+.time {
+  font-size: 11px;
+  color: #727072;
+}
+
+.image {
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+/* Close button */
+.close-button {
+  background: #403e41;
+  color: #727072;
+  border-radius: 50%;
+  min-width: 22px;
+  min-height: 22px;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+.close-button:hover {
+  background: #ff6188;
+  color: #2d2a2e;
+}
+
+/* ── Control Center Panel ── */
+.control-center {
+  background: #2d2a2e;
+  border: 1px solid #403e41;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.6);
+  margin: 8px;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.control-center-list-placeholder {
+  color: #727072;
+  font-size: 13px;
+}
+
+/* Header */
+.top-action-buttons {
+  margin-bottom: 8px;
+}
+
+.notification-count-label {
+  color: #ab9df2;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* DND toggle */
+.toggle-button {
+  background: #403e41;
+  color: #fcfcfa;
+  border-radius: 8px;
+  padding: 6px 14px;
+  margin: 2px;
+}
+
+.toggle-button:hover {
+  background: #78dce8;
+  color: #2d2a2e;
+}
+
+.toggle-button:checked {
+  background: #ff6188;
+  color: #2d2a2e;
+}
+
+/* "Clear all" button */
+.cc-action-button {
+  background: #403e41;
+  color: #fc9867;
+  border-radius: 8px;
+  padding: 6px 14px;
+  margin: 2px;
+}
+
+.cc-action-button:hover {
+  background: #fc9867;
+  color: #2d2a2e;
+}
+
+/* Scrollbar */
+scrollbar {
+  background: transparent;
+}
+
+scrollbar slider {
+  background: #403e41;
+  border-radius: 6px;
+  min-width: 4px;
+}
+
+scrollbar slider:hover {
+  background: #727072;
+}
+
+@keyframes shake {
+  0%   { margin-left: 0;   }
+  25%  { margin-left: 6px; }
+  50%  { margin-left: 0;   }
+  75%  { margin-left: -6px;}
+  100% { margin-left: 0;   }
+}

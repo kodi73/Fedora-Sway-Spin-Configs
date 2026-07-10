@@ -1,0 +1,17 @@
+[Presets]
+lastLoadedOutputPreset=Laptop
+
+[StreamInputs]
+inputDevice=alsa_input.pci-0000_04_00.6.analog-stereo
+
+[StreamOutputs]
+mostUsedPresets=ClaudeBassheads242_Neutral,Laptop
+outputDevice=alsa_output.pci-0000_04_00.6.analog-stereo
+plugins=gate#0,compressor#0,multiband_compressor#0,equalizer#0,limiter#0
+usedPresets=Laptop:10,ClaudeBassheads242_Neutral:14
+visiblePage=pluginsPage
+visiblePlugin=equalizer#0
+
+[Window]
+height=426
+width=400
