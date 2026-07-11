@@ -1,12 +1,15 @@
+[EffectsPipelines]
+bypass=true
+
 [Presets]
 lastLoadedOutputPreset=Laptop
 
 [StreamInputs]
-inputDevice=alsa_input.pci-0000_04_00.6.analog-stereo
+inputDevice=bluez_input.40:72:18:7A:CA:B2
 
 [StreamOutputs]
 mostUsedPresets=ClaudeBassheads242_Neutral,Laptop
-outputDevice=alsa_output.pci-0000_04_00.6.analog-stereo
+outputDevice=bluez_output.40_72_18_7A_CA_B2.1
 plugins=gate#0,compressor#0,multiband_compressor#0,equalizer#0,limiter#0
 usedPresets=Laptop:10,ClaudeBassheads242_Neutral:14
 visiblePage=pluginsPage
